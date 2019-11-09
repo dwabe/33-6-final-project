@@ -1,0 +1,20 @@
+[
+  {
+      "id": 1,
+      "title": "Feel It Break",
+      "image": "/images/1.jpeg",
+      "artist": "Austra"
+  },
+  {
+      "id": 2,
+      "title": "Olympia",
+      "image": "/images/2.jpeg",
+      "artist": "Austra"
+  },
+  {
+      "id": 3,
+      "title": "Debut",
+      "image": "/images/3.jpeg",
+      "artist": "Bjork"
+  }
+]
