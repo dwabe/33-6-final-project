@@ -1,0 +1,15 @@
+html {
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
