@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import { Container, Row, Col, Table, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-require('./Cart.css');
+require('./cart.css');
 
 function sort (items) {
   return items.sort((a, b) => a.id - b.id)
 };
 
- class Cart extends Component {
+class Cart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -126,7 +126,6 @@ function sort (items) {
     )
   }
 }
-
 
 const mapStateToProps = function(store) {
 	return {
