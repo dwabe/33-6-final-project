@@ -3,13 +3,13 @@ import { connect } from "react-redux";
 import { Container, Row, Col, Table } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-require('./summaryPage.css');
+require('./summary.css');
 
 function sort (items) {
     return items.sort((a, b) => a.id - b.id)
   };
 
-class SummaryPage extends Component {
+class Summary extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -130,4 +130,4 @@ const mapStateToProps = function(store) {
 	};
 };
 
-export default connect(mapStateToProps)(SummaryPage);
+export default connect(mapStateToProps)(Summary);
