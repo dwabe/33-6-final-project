@@ -1,19 +1,27 @@
 .footer-container {
-  position: absolute;
+  display: flex;
   bottom: 0;
   width: 100%;
-  background-color: #27b0eb;
-  height: 2 rem;
+  background-color: #343A40;
+  height: 2.5rem;
 }
 
 footer {
   height: 100%;
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.main-title {
-  font-size: 1.3rem;
+.footer-signature {
+  color: #ecf0f1;
+  font-size: 0.8rem;
+  margin-left: -30px;
+}
+
+.contact-data {
+  color: #ecf0f1;
+  font-size: 0.8rem;
 }
