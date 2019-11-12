@@ -1,0 +1,20 @@
+.checkout-container {
+  min-height: 100vh;
+  background:#BDC3C7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.checkout-header {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #34495E;
+  font-weight: 700;
+}
+
+.form-group input {
+  font-size: 0.8rem;
+}
