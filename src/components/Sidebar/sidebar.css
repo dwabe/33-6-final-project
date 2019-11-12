@@ -1,0 +1,140 @@
+.sidebar {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.sidebar-wrapper {
+  background-color: transparent;
+  color: #ecf0f1;
+  background: transparent;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.sidebar-container {
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 230px;
+  top: 0;
+  padding: 30px;
+  background: #95a5a6;
+}
+
+.sidebar-content {
+  width: 100%;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-title {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.795);
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.sidebar-title:first-of-type {
+  margin-top: 0;
+}
+
+.sidebar-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.filter-title {
+  font-size: 0.7rem;
+  color: #ecf0f1;
+  margin-left: 15px;
+}
+
+.filter-form, .sort-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sidebar-list {
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: #34495e;
+  padding: none;
+}
+
+.sidebar-list li input{
+  visibility: hidden;
+}
+
+.sidebar-list li label{
+  cursor: pointer;
+}
+
+.sidebar-list li input:hover:not(:checked) + label {
+color: #ecf0f1;
+}
+
+.sidebar-list input:checked {
+  color: #ecf0f1;
+}
+
+.sidebar-list li input:checked + label:before {
+  content:'*';
+  font-weight: 700;
+  font-size: 1em;
+  padding-right: 3px;
+  color: #ecf0f1;
+}
+
+.sidebar-container-small {
+  padding-top: 15px;
+  position: relative;
+}
+
+.mobile-sidebar-container {
+  flex-direction: column;  
+  height: 100%;
+  padding-top: 10px;
+  transition: all 0.9s linear;
+}
+
+.mobile-sidebar-active {
+  visibility: visible;
+}
+
+.mobile-sidebar-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar-container {
+      box-sizing: border-box;
+      position: absolute;
+      height: 100%;
+      width: 250px;
+      top: 0;
+      right: -190px;
+      padding: 40px;
+      background: rgba(52, 58, 64, 1);
+      transition: 0.3s transform ease-in-out;
+      z-index: 2;
+  }
+  .hamburger {
+      z-index: 3;
+  }
+}
