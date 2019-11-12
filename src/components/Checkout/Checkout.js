@@ -4,7 +4,7 @@ import { Container, Row, Col} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import CheckoutForm from "./CheckoutForm";
 
-require('./Checkout.css');
+require('./checkout.css');
 
 class Checkout extends Component {
   constructor(props) {

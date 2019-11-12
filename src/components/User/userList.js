@@ -1,5 +1,5 @@
 import React from 'react';
-import Username from './username';
+import Username from './userName';
 
 const UsersList = (props) => (
   <div className="users-list">
