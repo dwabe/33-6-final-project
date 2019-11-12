@@ -13,6 +13,7 @@ class Main extends Component {
 		this.state = { 
 			sort: '',
 			genre: '',
+			artist: '',
 			type: '',
 			search: '',
 			products: [], 
@@ -34,17 +35,20 @@ class Main extends Component {
 
 	listProducts() {
 		this.setState(state => {
-			if (state.sort !== '') {
-				state.products.sort((a, b) =>
-				(state.sort === 'lowest'
-					? ((a.price > b.price) ? 1 : -1)
-					: ((a.price < b.price) ? 1 : -1)));
+			if (state.sort == 'lowest') {
+				state.products.sort((a, b) => ((a.price > b.price) ? 1 : -1)) ;
+			} else if (state.sort == 'highest') {
+				state.products.sort((a, b) => ((a.price < b.price) ? 1 : -1)) ;
+			} else if (state.sort == 'atoz') {
+				state.products.sort((a, b) => ((a.artist > b.artist) ? 1 : -1)) ;
+			} else if (state.sort == 'ztoa') {
+				state.products.sort((a, b) => ((a.artist < b.artist) ? 1 : -1)) ;
 			} else {
-				state.products.sort((a, b) => (a.id > b.id) ? 1 : -1);
+				state.products.sort((a, b) => ((a.id > b.id) ? 1 : -1)) ;
 			}
 			let tempList = state.products;
 			if (state.search !== '') {
-				tempList = state.products.filter(product =>  product.title.toLowerCase().includes(state.search.toLowerCase()));
+				tempList = state.products.filter(product =>  product.title.toLowerCase().includes(state.search.toLowerCase()) || product.artist.toLowerCase().includes(state.search.toLowerCase()));
 				if (state.genre !== '') {
 					tempList = tempList.filter(a => a.genre === state.genre) ;
 				}

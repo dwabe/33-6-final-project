@@ -16,11 +16,11 @@ const SidebarContent = (props) => {
             <ul className="sidebar-list">
               <li>
                 <input type="radio" name="price" value="lowest" id="price-asc" onChange={props.handlePriceSort}/>
-                <label htmlFor="price-asc">Ascending</label>
+                <label htmlFor="price-asc">ascending</label>
               </li>
               <li>
                 <input type="radio"  name="price"value="highest" id="price-desc" onChange={props.handlePriceSort}/>
-                <label htmlFor="price-desc">Descending</label>
+                <label htmlFor="price-desc">descending</label>
               </li>
             </ul>
           </form>
@@ -31,12 +31,12 @@ const SidebarContent = (props) => {
               <input type="radio" className="hidden-radio" name="artist" value={props.sort} onChange={props.handleArtistSort}/>
               <ul className="sidebar-list">
                 <li>
-                  <input type="radio" name="artist" value="lowest" id="artist-asc" onChange={props.handleArtistSort}/>
-                  <label htmlFor="artist-asc">Ascending</label>
+                  <input type="radio" name="artist" value="atoz" id="artist-asc" onChange={props.handleArtistSort}/>
+                  <label htmlFor="artist-asc">ascending</label>
                 </li>
                 <li>
-                  <input type="radio"  name="artist" value="highest" id="artist-desc" onChange={props.handleArtistSort}/>
-                  <label htmlFor="artist-desc">Descending</label>
+                  <input type="radio"  name="artist" value="ztoa" id="artist-desc" onChange={props.handleArtistSort}/>
+                  <label htmlFor="artist-desc">descending</label>
                 </li>
               </ul>
             </form>                  
@@ -50,15 +50,39 @@ const SidebarContent = (props) => {
               <ul className="sidebar-list">
                 <li>
                   <input type="radio"  name="genre" value="" id="genre-all" onChange={props.handleGenreFilter} defaultChecked={true}/> 
-                  <label htmlFor="genre-all">All</label>
+                  <label htmlFor="genre-all">all</label>
                 </li>    
                 <li>
-                  <input type="radio" name="genre" value="hard" id="genre-hard"  onChange={props.handleGenreFilter}/>
-                  <label htmlFor="genre-hard">Rock</label>
+                  <input type="radio" name="genre" value="britpop" id="genre-britpop"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-britpop">britpop</label>
                 </li>
                 <li>
-                  <input type="radio"  name="genre" value="soft" id="genre-soft"  onChange={props.handleGenreFilter}/>
-                  <label htmlFor="genre-soft">Electropop</label>
+                  <input type="radio" name="genre" value="electro-trance" id="genre-electro-trance"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-electro-trance">electro trance</label>
+                </li>
+                <li>
+                  <input type="radio"  name="genre" value="electropop" id="genre-electropop"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-electropop">electropop</label>
+                </li>
+                <li>
+                  <input type="radio"  name="genre" value="grunge" id="genre-grunge"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-grunge">grunge</label>
+                </li>
+                <li>
+                  <input type="radio"  name="genre" value="postpunk" id="genre-postpunk"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-postpunk">postpunk</label>
+                </li>
+                <li>
+                  <input type="radio"  name="genre" value="reggae" id="genre-reggae"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-reggae">reggae</label>
+                </li>
+                <li>
+                  <input type="radio" name="genre" value="rock" id="genre-rock"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-rock">rock</label>
+                </li>
+                <li>
+                  <input type="radio"  name="genre" value="trash-metal" id="genre-trash-metal"  onChange={props.handleGenreFilter}/>
+                  <label htmlFor="genre-trash-metal">trash metal</label>
                 </li>
               </ul>
             </form>

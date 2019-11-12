@@ -117,7 +117,7 @@
             "amount": 2,
             "issueYear": 2011,
             "sale": true,
-            "genre": "electro trance",
+            "genre": "electro-trance",
             "more": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "price": 44.99,
             "oldPrice": 59.99
@@ -266,7 +266,7 @@
             "amount": 3,
             "issueYear": 2016,
             "sale": false,
-            "genre": "trash metal",
+            "genre": "trash-metal",
             "more": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "price": 59.99
         },
