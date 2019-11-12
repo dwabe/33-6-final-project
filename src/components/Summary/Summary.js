@@ -107,14 +107,17 @@ class Summary extends Component {
               </tr>
             </tbody>
           </Table>
+          <Link to='/' >
+            <h3 className="center-align emptyCart-link-text">... or go back and find another great records!</h3>
+          </Link>
         </Col>        
         : 
         <Row>
           <Col className="center-align middle-posiiton">
-            <h3 className="emptyCart-title"></h3>
-            <Link to='/' >
-              <h3 className="emptyCart-link-text"></h3>
-            </Link>
+              <h3 className="emptyCart-title">We're really sorry, but your cart is empty...</h3>
+              <Link to='/' >
+                <h3 className="emptyCart-link-text">Please go back and find some great records!</h3>
+              </Link>
           </Col>
         </Row>
         }

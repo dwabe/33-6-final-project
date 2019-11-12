@@ -52,9 +52,9 @@ class Checkout extends Component {
         : 
         <Row>
           <Col className="center-align middle-posiiton">
-              <h3 className="emptyCart-title"> </h3>
+              <h3 className="emptyCart-title">We're really sorry, but your cart is empty...</h3>
               <Link to='/' >
-                <h3 className="emptyCart-link-text"> </h3>
+                <h3 className="emptyCart-link-text">Please go back and find some great records!</h3>
               </Link>
           </Col>
         </Row>

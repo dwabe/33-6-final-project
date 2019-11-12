@@ -17,7 +17,7 @@ const Product = (props) => {
 				}
 			<div className="product-image-wrapper">				
 				<Link to={'/product/' + props.product.id} className="center-align">	
-					<img title={props.product.name} src={props.product.image} alt="album cover"/>
+					<img className="product-photo" title={props.product.name} src={props.product.image} alt="album cover"/>
 				</Link>
 			</div>
 			<div className="product-title-wrapper">
@@ -39,7 +39,7 @@ const Product = (props) => {
 					props.product.sale ? 
 					<div className="product-price-wrapper">
 						<h3 className="product-price">{props.product.price} zł 	</h3>
-						<h3 className="product-Oldprice">{props.product.oldPrice} zł</h3>	
+						<h3 className="product-oldPrice">{props.product.oldPrice} zł</h3>	
 					</div>
 					:
 					<h3 className="product-price">{props.product.price} zł</h3>

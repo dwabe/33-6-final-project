@@ -39,7 +39,7 @@
             "genre": "electropop",
             "more": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "sale": false,
-            "price": 35.50
+            "price": 39.89
         },
         {
             "id": 4,
@@ -52,7 +52,7 @@
             "sale": false,
             "genre": "electropop",
             "more": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "price": 33.99
+            "price": 39.99
         },
         {
             "id": 5,
@@ -238,10 +238,11 @@
             "type": "CD",
             "amount": 5,
             "issueYear": 1991,
-            "sale": false,
+            "sale": true,
             "genre": "electropop",
             "more": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "price": 54.99
+            "price": 44.99,
+            "oldPrice": 54.99
         },
         {
             "id": 19,

@@ -17,11 +17,16 @@ footer {
 
 .footer-signature {
   color: #ecf0f1;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-left: -30px;
 }
 
 .contact-data {
   color: #ecf0f1;
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+.contact-icon {
+  font-size: 25px;
+  margin: 0 0 0 10px;
 }

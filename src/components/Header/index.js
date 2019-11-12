@@ -25,7 +25,7 @@ export default class  Header extends React.Component {
         <div className="header-container">
           <Container className="nav-container">
             <Navbar color="dark" dark expand="md">
-              <NavbarBrand className="navbar-brand" href="/">bebe music shop</NavbarBrand>
+              <NavbarBrand className="navbar-brand" href="/"><FontAwesomeIcon icon="music" />  bebe music shop</NavbarBrand>
               <Nav className="ml-auto nav-main" navbar>
                 <NavItem>
                   <NavLink exact to="/cart" className="nav-link" activeClassName="active"><FontAwesomeIcon icon="shopping-cart" /> Cart ({sumItems(itemsInCart) || 0})</NavLink>

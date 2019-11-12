@@ -8,7 +8,7 @@ class ProductList extends React.Component {
     super(props);
     this.state = {
       currentPage: 0,
-      productPerPage: 12
+      productPerPage: 20
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -21,7 +21,7 @@ class ProductList extends React.Component {
   }
   render () {
     const { currentPage, productPerPage } = this.state;
-    const rowSize = 12;
+    const rowSize = 4;
     const currentProducts = this.props.products.slice( currentPage * productPerPage,(currentPage + 1) * productPerPage);
     const productsLayout = currentProducts
       .map((product, i) => (

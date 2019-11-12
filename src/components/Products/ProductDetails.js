@@ -54,7 +54,7 @@ class ProductDetails extends Component {
                 sale ? 
                 <div className="product-price-wrapper">
                   <h3 className="productDetails-price">{price} zł</h3> 
-                  <h3 className="productDetails-Oldprice">{oldPrice} zł</h3>	
+                  <h3 className="productDetails-oldPrice">{oldPrice} zł</h3>	
                 </div>
                 :
                 <div className="product-price-wrapper">
