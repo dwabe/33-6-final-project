@@ -1,14 +1,16 @@
 .homepage-container {
+  margin-top: 50px;
   display: grid;
   grid-template-areas: 
   'sidebar booklist';
   grid-gap: 10px;
   grid-template-columns: 230px 1fr;
+  
 }
 
 .product-list-wrapper {
   padding-top: 20px;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .product-row{
@@ -193,6 +195,7 @@
 
 @media (max-width: 768px) {
 .homepage-container  {
+  margin-top: 110px;
 display: flex;
   }
 

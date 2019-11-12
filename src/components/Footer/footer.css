@@ -10,23 +10,26 @@ footer {
   height: 100%;
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-signature {
   color: #ecf0f1;
-  font-size: 1rem;
-  margin-left: -30px;
+  font-size: 0.8rem;
+  margin-left: 30px;
 }
 
-.contact-data {
+.contact {
   color: #ecf0f1;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0;
+  line-height: 20px;
+  margin-right: 30px;
 }
 
 .contact-icon {
-  font-size: 25px;
+  font-size: 20px;
   margin: 0 0 0 10px;
 }

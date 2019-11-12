@@ -1,13 +1,13 @@
 .checkout-container {
-  min-height: 100vh;
+  min-height: 95vh;
   background:#BDC3C7;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   align-items: center;
 }
 
 .checkout-header {
-  margin-top: 30px;
+  margin-top: 80px;
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.2rem;

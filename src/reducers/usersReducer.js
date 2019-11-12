@@ -19,12 +19,13 @@ const initialState = {
 
 const usersReducer = (state=initialState, action) => {
   switch(action.type) {
-    case ADD_USER:
-      return {...state, users:[...state.users, action.newUser]}
-    case GET_USERS:
-      return Object.assign({}, state, {users: state.users});
+      case ADD_USER:        
+          return {...state, users:[...state.users, action.newUser]}           
+      case GET_USERS:
+          return Object.assign({}, state, {users: state.users});
+      default:
+          return state;
   }
-      return state;
 };
 
 export default usersReducer;

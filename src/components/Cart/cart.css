@@ -1,12 +1,12 @@
 .cart-container {
-  min-height: 90vh;
+  min-height: 95vh;
   background: #BDC3C7;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .cart-header {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 1.2rem;

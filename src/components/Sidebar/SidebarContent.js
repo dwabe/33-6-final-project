@@ -26,7 +26,7 @@ const SidebarContent = (props) => {
           </form>
         </div>
           <div>
-            <h5 className="filter-title">by Name</h5>
+            <h5 className="filter-title">by Artist</h5>
             <form className="sort-form">
               <input type="radio" className="hidden-radio" name="artist" value={props.sort} onChange={props.handleArtistSort}/>
               <ul className="sidebar-list">

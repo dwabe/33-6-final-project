@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import UsersList from './userList';
-import { getUsers, addUser } from '../../actions/actionsUsers';
 
 class User extends Component {
+  // eslint-disable-next-line
   constructor(props) {
     super(props);
   }

@@ -1,7 +1,7 @@
 .productDetails-wrapper {
-  min-height: 90vh;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  min-height: 95vh;
+  padding-top: 80px;
+  padding-bottom: 10px;
   background: #BDC3C7;
 }
 
@@ -145,4 +145,15 @@
 
 .p-link {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .product-details-container {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .moreDetails-item {
+    text-align: center;
+  }
 }

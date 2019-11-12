@@ -34,11 +34,10 @@ class ProductDetails extends Component {
             <div className="product-moreDetails">
               <h4 className="moreDetails-header">Details</h4>
               <div className="product-moreDetails-container">
-                <h5 className="moreDetails-item">type: {type}</h5>
-                <h5 className="moreDetails-item">genre: {genre}</h5>
-                <h5 className="moreDetails-item">year of issue: {issueYear}</h5>
+                <div className="moreDetails-item">type: {type}</div>
+                <div className="moreDetails-item">genre: {genre}</div>
+                <div className="moreDetails-item">year of issue: {issueYear}</div>
               </div>
-              <h4 className="moreDetails-header">More</h4>
             </div>
           </div>
           <div className="col-sm-12 col-md-4 col-lg-4 product-purchase-wrapper">

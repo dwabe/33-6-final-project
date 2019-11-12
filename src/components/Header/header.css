@@ -1,6 +1,3 @@
-.header-wrapper {
-  height: 56px;
-}
 
 .header-container {
   background-color:#343A40;
@@ -8,7 +5,7 @@
   display: block;
   position: fixed;
   z-index: 4;
-  height: 56px;
+  height: 50px;
 }
 
 .nav-container {
@@ -18,12 +15,10 @@
 }
 
 .nav-link {
-  margin-right: -35px;
   font-size: 0.9rem;
   font-weight: 700;
 }
 .navbar-brand {
-  margin-left: -35px;
   font-weight: 700;
 }
 

@@ -35,13 +35,13 @@ class Main extends Component {
 
 	listProducts() {
 		this.setState(state => {
-			if (state.sort == 'lowest') {
+			if (state.sort === 'lowest') {
 				state.products.sort((a, b) => ((a.price > b.price) ? 1 : -1)) ;
-			} else if (state.sort == 'highest') {
+			} else if (state.sort === 'highest') {
 				state.products.sort((a, b) => ((a.price < b.price) ? 1 : -1)) ;
-			} else if (state.sort == 'atoz') {
+			} else if (state.sort === 'atoz') {
 				state.products.sort((a, b) => ((a.artist > b.artist) ? 1 : -1)) ;
-			} else if (state.sort == 'ztoa') {
+			} else if (state.sort === 'ztoa') {
 				state.products.sort((a, b) => ((a.artist < b.artist) ? 1 : -1)) ;
 			} else {
 				state.products.sort((a, b) => ((a.id > b.id) ? 1 : -1)) ;
